@@ -1,12 +1,8 @@
 web:
-  image: wordpress
-  links:
-    - db:mysql
+  image: antonioandrade/wordpress
   ports:
     - 8080:80
-  volumes:
-   - ./www/:/var/www/html/
-db:
-  image: mariadb
-  environment:
-    MYSQL_ROOT_PASSWORD: mysqlpassword
+# @todo: using Volumes seems to break permissions at startup
+#  volumes:
+#   - ./www/:/usr/share/nginx/www
+#   - ./mysql:/var/lib/mysql
