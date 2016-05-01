@@ -6,7 +6,7 @@ nginxproxy:
   volumes:
     - /var/run/docker.sock:/tmp/docker.sock:ro
 
-#  some web app
+#webapp:
 #  image: vendor/app
 #  name: webapp
 #  restart: always 

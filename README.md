@@ -1,2 +1,2 @@
 # docker-compose formulas
-Just a bunch of formulas for docker. Have fun.
+A bunch of formulas for docker-compose. Have fun.
