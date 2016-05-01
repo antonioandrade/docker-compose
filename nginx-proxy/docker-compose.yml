@@ -1,0 +1,21 @@
+nginxproxy:
+  image: jwilder/nginx-proxy
+  restart: always
+  ports: 
+    - 80:80
+  volumes:
+    - /var/run/docker.sock:/tmp/docker.sock:ro
+
+#  some web app
+#  image: vendor/app
+#  name: webapp
+#  restart: always 
+
+#  environment:
+#      required for jwilder/nginx-proxy
+#    - VIRTUAL_HOST=sub.d2.antonioandrade.eu
+#    - VIRTUAL_PORT=8080 # use if different from 80
+
+#  volumes:
+#   - ./volumes/webapp/htdocs:/usr/share/nginx
+#   - ./volumes/webapp/mysql:/var/lib/mysql
